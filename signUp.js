@@ -7,7 +7,6 @@ $(function() {
             type: 'POST',
             success: function(response) {
                 console.log(response);
-                alert("user created successfully!");
             },
             error: function(error) {
                 console.log(error);
