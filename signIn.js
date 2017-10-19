@@ -7,7 +7,8 @@ $(function() {
             type: 'GET',
             success: function(response) {
                 console.log(response);
-                alert("user created successfully!");
+                if(typeof response =='object')
+                    window.location.href = '/showMenuPage';
             },
             error: function(error) {
                 console.log(error);
