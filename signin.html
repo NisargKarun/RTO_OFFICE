@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Python Flask Bucket List App</title>
+    <title>Sign In</title>
  
     
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +13,15 @@
   </head>
  
   <body>
+      <!--{% with messages = get_flashed_messages() %}
+         {% if messages %}
+            <ul>
+               {% for message in messages %}
+               <li>{{ message }}</li>
+               {% endfor %}
+            </ul>
+         {% endif %}
+      {% endwith %}-->
  
     <div class="container">
       <div class="header">
@@ -23,11 +32,11 @@
             <li role="presentation" class="active"><a href="showSignUp">Sign Up</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Python Flask App</h3>
+        <h3 class="text-muted">Sign In</h3>
       </div>
  
       <div class="jumbotron">
-        <h1>Bucket List App</h1>
+        <h1>Sign In</h1>
         <form class="form-signin">
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
