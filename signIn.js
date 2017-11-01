@@ -9,6 +9,8 @@ $(function() {
                 console.log(response);
                 if(typeof response =='object')
                     window.location.href = '/showMenuPage';
+                else
+                    alert(response);
             },
             error: function(error) {
                 console.log(error);
