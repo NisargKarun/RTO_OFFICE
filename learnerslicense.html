@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learner'sLicense</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/learnersLicense.js"></script>
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/signOut">Logout</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Learner's License</h3>
+      </div>
+ 
+      <div class="jumbotron">
+        <h1>Learner's License</h1>
+        <form class="form-signin">
+        <h3>Personal Details</h3>
+        <label for="firstName" class="sr-only">First Name</label>
+        <input type="name" name="firstName" id="firstName" class="form-control" placeholder="FirstName" required autofocus>
+        <label for="lastName" class="sr-only">Last Name</label>
+        <input type="name" name="lastName" id="lastName" class="form-control" placeholder="LastName" required autofocus>
+        <label for="dob" class="sr-only">Date of birth</label>
+        <input type="date" name="dob" id="dob" class="form-control" placeholder="dob" required autofocus>
+        <label for="sex" name="sex" id="sex" class="sr-only">Sex</label>
+        <input type="radio" name="sex" value="Male" checked> Male<br>
+        <input type="radio" name="sex" value="Female"> Female<br>
+        <input type="radio" name="sex" value="Other"> Other  
+        <label for="aadharNo" class="sr-only">Aadhar number</label>
+        <input type="name" name="aadharNo" id="aadharNo" class="form-control" placeholder="aadharNo" required autofocus>
+        <label for="mobileNo" class="sr-only">Mobile number</label>
+        <input type="name" name="mobileNo" id="mobileNo" class="form-control" placeholder="mobileNo" required autofocus>
+        <br>
+            
+        <h3>Address</h3>
+        <label for="addressNo" class="sr-only">Number</label>
+        <input type="number" name="addressNo" id="addressNo" class="form-control" placeholder="addressNo" required autofocus>
+        <label for="addressLocality" class="sr-only">Locality</label>
+        <input type="name" name="addressLocality" id="addressLocality" class="form-control" placeholder="addressLocality" required autofocus>
+        <label for="addressDistrict" class="sr-only">District</label>
+        <input type="name" name="addressDistrict" id="addressDistrict" class="form-control" placeholder="addressDistrict" required autofocus>
+        <label for="addressPincode" class="sr-only">Pincode</label>
+        <input type="number" name="addressPincode" id="addressPincode" class="form-control" placeholder="addressPincode" required autofocus>
+        <br>
+            
+        <select name="licenseType" id="licenseType">License Type
+            <option value="MC50CC">MC50CC(Motor Cycle Less Than 50CC)</option>
+            <option value="MCWOG">MCWOG(Motor Cycle With Out Gear)</option>
+            <option value="MCWG">MCWG(Motor Cycle With Gear)</option>
+            <option value="LMV">LMV(Light Motor Vehicle)</option>
+            <option value="3W-NT">3W-NT(LMV 3-wheeler)</option>
+            <option value="Other">Other</option>
+        </select>
+            
+        <select name="rtoOffice" id="rtoOffice">RTO Office
+            <option value="KA01">KA01(Koramangala)</option>
+            <option value="KA02">KA02(Rajajinagar)</option>
+            <option value="KA03">KA03(Indiranagar)</option>
+            <option value="KA04">KA04(Yeshwanthpur)</option>
+            <option value="KA05">KA05(Jayanagar)</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="photo" class="sr-only">Photo</label>
+        <input type="file" name="photo" id="photo" accept="image/*">
+            
+        <label for="addressProof" class="sr-only">Address Proof</label>
+        <input type="file" name="addressProof" id="addressProof" accept="image/*">
+        
+        <label for="aadhar" class="sr-only">Aadhar Card</label>
+        <input type="file" name="aadharCard" id="aadharCard" accept="image/*">
+  
+        <button id="btnLL" class="btn btn-lg btn-primary btn-block" type="button">Submit</button>
+      </form>
+      </div>
+ 
+       
+ 
+     <!-- <footer class="footer">
+        <p>&copy; Company 2015</p>
+      </footer>-->
+ 
+    </div>
+  </body>
+</html>
